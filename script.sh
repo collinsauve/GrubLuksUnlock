@@ -10,7 +10,7 @@ cryptsetup luksFormat --type=luks2 -v $root_dev
 
 # Now let's open the partitions
 cryptsetup open --type=luks1 -v $boot_dev EncryptedUbuntuBoot
-cryptsetup open --type=luks2 -v /dev/nvme0n1p6 EncryptedUbuntuLVM
+cryptsetup open --type=luks2 -v $root_dev EncryptedUbuntuLVM
 
 # Now that the partitions are open, let's create the lvm on the main partition:
 pvcreate /dev/mapper/EncryptedUbuntuLVM
