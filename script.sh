@@ -1,4 +1,5 @@
 #/usr/bin/env bash
+set -euo pipefail
 
 boot_dev=/dev/nvme0n1p2
 root_dev=/dev/nvme0n1p3
