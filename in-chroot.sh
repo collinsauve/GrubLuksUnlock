@@ -35,7 +35,7 @@ apt install grub-efi-amd64 mtools os-prober efibootmgr
 #
 # Add:
 # GRUB_ENABLE_CRYPTODISK=y
-# GRUB_CMDLINE_LINUX="efi=noruntime pcie_ports=compat acpi=force"
+# GRUB_CMDLINE_LINUX="efi=noruntime pcie_-ports=compat acpi=force"
 # GRUB_HIDDEN_TIMEOUT=5
 # GRUB_TIMEOUT_STYLE=menu
 
