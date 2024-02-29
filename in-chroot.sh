@@ -23,7 +23,7 @@ cryptsetup luksDump $root_dev
 # nano /etc/crypttab
 #
 # Add:
-# EncryptedUbuntuBoot /dev/nvme0n1p2 /etc/luks/Root.keyfile luks
+# EncryptedUbuntuRoot /dev/nvme0n1p2 /etc/luks/Root.keyfile luks
 
 
 apt install grub-efi-amd64 mtools os-prober efibootmgr
